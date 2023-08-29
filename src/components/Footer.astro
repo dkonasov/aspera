@@ -2,10 +2,10 @@
 const today = new Date();
 ---
 
-<footer class="text-gray bg-gradient-to-b from-grayLight/50 to-white">
+<footer class="text-gray bg-gradient-to-b from-grayLight/50 to-white pt-8 px-4 pb-32 text-center">
 	&copy; {today.getFullYear()} Dmitrii Konasov. All rights reserved.
-	<div class="social-links">
-		<a href="https://mas.to/@nikfrey" target="_blank" class="text-gray hover:text-grayDark" aria-label="Follow me on Mastodon">
+	<div class="social-links flex justify-center gap-4 mt-4">
+		<a href="https://mas.to/@nikfrey" target="_blank" class="text-gray hover:text-grayDark no-underline" aria-label="Follow me on Mastodon">
 			<svg
 				viewBox="0 0 16 16"
 				aria-hidden="true"
@@ -28,18 +28,3 @@ const today = new Date();
 		</a>
 	</div>
 </footer>
-<style>
-	footer {
-		padding: 2em 1em 6em 1em;
-		text-align: center;
-	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
-	}
-	.social-links a {
-		text-decoration: none;
-	}
-</style>
