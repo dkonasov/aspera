@@ -6,11 +6,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" transition:animate="none">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body transition:animate="none">
 		<Header title={SITE_TITLE} />
 		<main>
 			<h1>Hello, world!</h1>

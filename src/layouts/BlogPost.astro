@@ -5,19 +5,22 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
+import { slideVertical } from '../animations/slide-vertical';
+
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
 ---
 
-<html lang="en">
+<html lang="en" transition:animate="none">
 	<head>
 		<BaseHead title={title} description={description} />
 	</head>
 
-	<body>
+	<body transition:animate="none">
 		<Header />
-		<main class="w-full m-0">
+		<main class="w-full m-0" transition:animate={slideVertical}>
 			<article>
 				<div class="hero-image w-full">
 					{heroImage && <img width={1020} height={510} src={heroImage} alt="" class="shadow-card block my-0 mx-auto rounded-xl" />}
