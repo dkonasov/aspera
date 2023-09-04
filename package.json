@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "npm run build && start-server-and-test 'http-server dist -c-1 --silent' 8080 'playwright test'"
+    "test": "playwright test"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.0.0",
@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.37.1",
-    "http-server": "^14.1.1",
-    "start-server-and-test": "^2.0.0"
+    "http-server": "^14.1.1"
   }
 }
