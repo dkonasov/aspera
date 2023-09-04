@@ -18,8 +18,8 @@ jobs:
           name: dist
           path: dist
   test:
-    name: Build application
-    runs-on: ubuntu-latest
+    name: Test application
+    runs-on: macos-latest
     needs: build
     steps:
       - uses: actions/checkout@v3
